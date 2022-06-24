@@ -101,7 +101,7 @@ def exp9():
     except:
       print("\033[0;37;40m VIP MENYENGGOL IP %s PORT %s"%(ip,port))
 
-for y in range(data):
+for y in range(threads):
   th = threading.Thread(target = exp)
   th.start()
   th = threading.Thread(target = exp3)
